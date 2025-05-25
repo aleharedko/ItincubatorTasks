@@ -27,12 +27,12 @@
 
     <section data-cy="hw1-section-about-pre">
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
-        <selct>
+        <select>
             <option value="">Belarus</option>
             <option value="" selected>Lietuvas Respublika</option>
             <option value="">Germani</option>
             <option value="">USA</option>
-        </selct>
+        </select>
         <div data-cy="hw1-unordered-list-box-pre">
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
             <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
@@ -64,6 +64,12 @@
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+                <!--<fieldset-->
+                    <label for="html"> <input type="checkbox" checked name="html" id="html">HTML</label>
+                    <label for="css"> <input type="checkbox" checked name="css" id="css">CSS</label>
+                    <label for="js"> <input type="checkbox"  name="js" id="js">JavaScript</label>
+                    <label for="react"> <input type="checkbox"  name="react" id="react">React</label>
+            <!--</fieldset>-->
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
         <!-- 6) Создай здесь кнопку “Добавить” -->
