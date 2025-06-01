@@ -20,19 +20,28 @@ header span {
 }
 
 .main-section {
-    /* Стили для первой секции */
+    background-color:#fafaff;
+    padding: 60px;
+    min-height: 100vh;    
 }
 
 .main-title {
-    /* Стили для заголовка в первой секции */
+    ont-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #303030;
+    margin: 0 0 20px 0;
 }
 
 .main-text {
-    /* Стили для текста в первой секции */
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #303030;
 }
 
 .main-image {
-    /* Стили для изображения в первой секции */
+    max-width: 715px;
 }
 
 
