@@ -49,24 +49,28 @@ header span {
 
 
 .about-section {
-    fill: #fff; /*цвето фона??? не могу выделить и узнать*/
+    background-color:#FFFFFF;
     font-family: "Inter", sans-serif;
     margin: 100px 0; 
 }
 
-select {
+select{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    letter-spacing: 0.01em;
     color: #303030;
+    appearance: none; /*значение, которое убирает стадндартные значения установленные по умолчанию*/
+    background-repeat: no-repeat; /* для фексирования заднего фона без дублирования*/
+    background-position: right 12px top 50%; /*позиционорования заднего фона по центру справа*/
+
     border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
     width: 150px;
     height: 36px;
-    background-image: url(/assets/ep_arrow-down.svg) ;
-    align-items: center;
-    background-repeat: no-repeat;
-    padding: 12px;
+    
+    background-image: url(/assets/ep_arrow-down.svg); /*заданее заднего фона как картинка*/
+    padding: 0 12px;
 }
 
 .section-title {
@@ -117,5 +121,5 @@ footer {
     font-weight: 400;
     font-size: 14px;
     color: #2965f1;
-    text-decoration: none           ;
+    text-decoration: none;
 }
