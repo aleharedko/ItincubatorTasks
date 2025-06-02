@@ -33,7 +33,7 @@ header span {
     font-weight: 700;
     font-size: 48px;
     color: #303030;
-    margin: 0 0 20px 0;
+    margin: 0px 20px;
 }
 
 .main-text {
@@ -145,8 +145,11 @@ table {
 th, td {
     border: 1px solid #95a1bb;
     height: 40px;
-    padding: 10px 15px;
+    padding: 12px 15px;
     align-items: left;
+    font-weight: 400;
+    font-size: 14px;
+    color: #303030;
 }
 
 footer {
