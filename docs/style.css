@@ -68,6 +68,9 @@ header span {
 }
 
 .about-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
@@ -86,6 +89,8 @@ select {
 
 select:hover,
 .text-field:hover {
+    cursor: pointer;
+    border-color: #2965F1;
     /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
 }
 
@@ -108,6 +113,9 @@ select:hover,
 
 .frameworks-list,
 .books-list {
+    display: flex;             
+    flex-direction: column;    
+    gap: 16px;        
     /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
 
@@ -119,15 +127,21 @@ select:hover,
 }
 
 .skills-block {
+    display: flex;
+    flex-direction: column-reverse;
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
 .skills {
-    
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
 
 .books-list {
+    min-width: 50%;
     font-weight: 400;
     font-size: 16px;
     padding-left: 20px;
@@ -166,7 +180,9 @@ form {
 }
 
 .btn:hover {
-    /* 📍 Стили для кнопки при наведении курсора */
+    cursor: pointer;
+    background-color: rgba(41, 101, 241, 0.9);;
+          /* 📍 Стили для кнопки при наведении курсора */
 }
 
 .line {
@@ -178,7 +194,8 @@ table {
     border-collapse: collapse;
     font-weight: 400;
     font-size: 14px;
-    margin: 0 auto;
+    margin: auto;
+    width: 300px;
 }
 
 th, td {
