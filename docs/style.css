@@ -34,6 +34,7 @@ header span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
