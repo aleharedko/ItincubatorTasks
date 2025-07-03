@@ -2,11 +2,11 @@
 
 function findLargest(a, b, c) {
     switch (true) {
-        case a > b || a > c:
+        case a > b && a > c:
             return a
-        case b > a || b > c:
+        case b > a && b > c:
             return b
-        case c > b || c > a:
+        case c > b && c > a:
             return c
     }
 }
