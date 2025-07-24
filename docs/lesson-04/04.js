@@ -13,5 +13,15 @@
 */
 
 function doubleEachCharacter(pushString) {
+    let stringPush = '';
+    for (let index = 0; index < pushString.length; index++) {
+        let char = pushString[index];
+        stringPush += char + char
+
+    }
+    return stringPush
 
 }
+
+let trys = doubleEachCharacter('str')
+console.log(trys);
