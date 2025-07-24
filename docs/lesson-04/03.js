@@ -18,10 +18,9 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 */
 
 function findCommonElements(array1, array2) {
-    let twoMasivTogether = array1.concat(array2);
-    twoMasivTogether = [...new Set(twoMasivTogether)]
-    return twoMasivTogether
+    let common = array1.filter(element => array2.includes(element));
+    return [...new Set(common)]
 }
 
-let sad = findCommonElements([1,2,3,3,4,5,6], [7,7,8,9,10,10]);
+let sad = findCommonElements([1,2,3,3,4,5,6], [3, 7,7,8,9,10,10]);
 console.log(sad);
