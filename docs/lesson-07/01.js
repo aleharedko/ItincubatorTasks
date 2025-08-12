@@ -22,10 +22,12 @@ addIClassSection.classList.add('sectionSix')
 
 const newImg = document.createElement('img')
 newImg.src = WEB_TECH_IMAGES[1]
-newImg.src = WEB_TECH_IMAGES[2]
 
 addIClassSection.appendChild(newImg)
-
+const eventForClick = document.getElementById('prev-button')
+eventForClick.addEventListener('click', function () {
+  
+})
 // addImgInSection.document.innerHTML = WEB_TECH_IMAGES
 
 
