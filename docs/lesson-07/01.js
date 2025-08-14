@@ -26,9 +26,11 @@ newImg.src = WEB_TECH_IMAGES[1]
 addIClassSection.appendChild(newImg)
 const eventForClick = document.getElementById('prev-button')
 eventForClick.addEventListener('click', function () {
-  
-})
+  document.activeElement(element)
+}
+return eventForClick)
 // addImgInSection.document.innerHTML = WEB_TECH_IMAGES
 
 
 
+console.log();
