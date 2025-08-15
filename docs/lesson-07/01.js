@@ -33,6 +33,6 @@ eventForClick.addEventListener('click', function () {
 })
 // addImgInSection.document.innerHTML = WEB_TECH_IMAGES
 
-
+WEB_TECH_IMAGES.forEach.add
 
 console.log();
