@@ -17,22 +17,17 @@ const WEB_TECH_IMAGES = [
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/c8a1f4a6-1337-4899-bdfd-a8c9c7bb806a_css-magic-logo.jpg',
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
 ]
-const addIClassSection = document.querySelector('section')
-addIClassSection.classList.add('sectionSix')
 
-const newImg = document.createElement('img')
-newImg.src = WEB_TECH_IMAGES[1]
+let currentIndex = 0;
+const sliderImg = document.getElementById('web-tech-image')
+sliderImg.src = WEB_TECH_IMAGES[currentIndex]
 
-const newImg2 = document.createElement('img')
-newImg2.src = WEB_TECH_IMAGES[2]
-
-addIClassSection.appendChild(newImg)
-const eventForClick = document.getElementById('prev-button')
-eventForClick.addEventListener('click', function () {
-
+const buttenNextImg = document.getElementById('next-button')
+buttenNextImg.addEventListener('click',() => {
+  currentIndex++
+  if(currentIndex >= WEB_TECH_IMAGES.length){
+    currentIndex = 0
+  }
+  sliderImg.src =WEB_TECH_IMAGES[currentIndex]
 })
-// addImgInSection.document.innerHTML = WEB_TECH_IMAGES
 
-WEB_TECH_IMAGES.forEach.add
-
-console.log();
