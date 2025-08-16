@@ -18,16 +18,26 @@ const WEB_TECH_IMAGES = [
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
 ]
 
-let currentIndex = 0;
-const sliderImg = document.getElementById('web-tech-image')
-sliderImg.src = WEB_TECH_IMAGES[currentIndex]
+let currentIndex = 0; //создаю переменную на текущий индекс
+const sliderImg = document.getElementById('web-tech-image'); // ищу слайдер по яйди
+sliderImg.src = WEB_TECH_IMAGES[currentIndex]; //устанавливаю первое изображение в слайдере
 
-const buttenNextImg = document.getElementById('next-button')
-buttenNextImg.addEventListener('click',() => {
-  currentIndex++
-  if(currentIndex >= WEB_TECH_IMAGES.length){
-    currentIndex = 0
+// Исправлено: переменные названы правильно: buttonNextImg и buttonPrevImg.
+const buttonNextImg = document.getElementById('next-button');
+const buttonPrevImg = document.getElementById('prev-button');
+
+buttonNextImg.addEventListener('click', () => {
+  currentIndex++;
+  if (currentIndex >= WEB_TECH_IMAGES.length) {
+    currentIndex = 0;
   }
-  sliderImg.src =WEB_TECH_IMAGES[currentIndex]
-})
+  sliderImg.src = WEB_TECH_IMAGES[currentIndex];
+});
 
+buttonPrevImg.addEventListener('click', () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = WEB_TECH_IMAGES.length - 1;
+  }
+  sliderImg.src = WEB_TECH_IMAGES[currentIndex];
+});
