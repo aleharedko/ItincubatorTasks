@@ -22,22 +22,45 @@ let currentIndex = 0; //создаю переменную на текущий и
 const sliderImg = document.getElementById('web-tech-image'); // ищу слайдер по яйди
 sliderImg.src = WEB_TECH_IMAGES[currentIndex]; //устанавливаю первое изображение в слайдере
 
-// Исправлено: переменные названы правильно: buttonNextImg и buttonPrevImg.
-const buttonNextImg = document.getElementById('next-button');
-const buttonPrevImg = document.getElementById('prev-button');
+const buttonNextImg = document.getElementById('next-button');  //ищу по id кнопку вперед
+const buttonPrevImg = document.getElementById('prev-button');  //ищу по id кнопку назад
 
-buttonNextImg.addEventListener('click', () => {
-  currentIndex++;
-  if (currentIndex >= WEB_TECH_IMAGES.length) {
-    currentIndex = 0;
+buttonNextImg.addEventListener('click', () => { // создаю событие по клику
+  currentIndex++;                               // перехожу на следующий индекс в массиве
+  if (currentIndex >= WEB_TECH_IMAGES.length) { // проверяю, если индекс дошел до последней картинке, то возвращаюсь на первую
+    currentIndex = 0;                           // устанавливаю инндекс текукщего элемента
   }
-  sliderImg.src = WEB_TECH_IMAGES[currentIndex];
+  sliderImg.src = WEB_TECH_IMAGES[currentIndex];  // вызываю текущий индекс
 });
 
-buttonPrevImg.addEventListener('click', () => {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = WEB_TECH_IMAGES.length - 1;
+buttonPrevImg.addEventListener('click', () => { // создаю событие по клику
+  currentIndex--;                               // перехожу наза по индексу в массиве
+  if (currentIndex < 0) {                       // проверяю, если индекс дошел до первой картинке, то возвращаюсь на последнюю
+    currentIndex = WEB_TECH_IMAGES.length - 1;  // устанавливаю инндекс текукщего элемента
   }
-  sliderImg.src = WEB_TECH_IMAGES[currentIndex];
+  sliderImg.src = WEB_TECH_IMAGES[currentIndex]; // вызываю текущий индекс
+});
+
+
+// let currentIndex = 0; //создаю переменную на текущий индекс
+// const sliderImg = document.getElementById('web-tech-image'); // ищу слайдер по яйди
+// sliderImg.src = WEB_TECH_IMAGES[currentIndex]; //устанавливаю первое изображение в слайдере
+
+// const buttonNextImg = document.getElementById('next-button');  //ищу по id кнопку вперед
+// const buttonPrevImg = document.getElementById('prev-button');  //ищу по id кнопку назад
+
+buttonNextImg.addEventListener('click', () => { // создаю событие по клику
+  currentIndex++;                               // перехожу на следующий индекс в массиве
+  if (currentIndex >= WEB_TECH_IMAGES.length) { // проверяю, если индекс дошел до последней картинке, то возвращаюсь на первую
+    currentIndex = 0;                           // устанавливаю инндекс текукщего элемента
+  }
+  sliderImg.src = WEB_TECH_IMAGES[currentIndex];  // вызываю текущий индекс
+});
+
+buttonPrevImg.addEventListener('click', () => { // создаю событие по клику
+  currentIndex--;                               // перехожу наза по индексу в массиве
+  if (currentIndex < 0) {                       // проверяю, если индекс дошел до первой картинке, то возвращаюсь на последнюю
+    currentIndex = WEB_TECH_IMAGES.length - 1;  // устанавливаю инндекс текукщего элемента
+  }
+  sliderImg.src = WEB_TECH_IMAGES[currentIndex]; // вызываю текущий индекс
 });
