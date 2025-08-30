@@ -11,11 +11,14 @@ function capitalizeWords(string) {
     return ''
   }
 
+  let newString = "";
+
   for (let i = 0; i < string.length; i++) {
     const element = string[i];
-    if(element === 'h' || element === 'w' || element === 'f' || element === 'j'){
-      return element.toUpperCase()
+    if (element === 'h' || element === 'w' || element === 'f' || element === 'j') {
+      newString = element.toUpperCase() + element.slice(1)
     }
+    return newString
   }
   // const solution = string.charAt(0).toUpperCase() + string.slice(1)
   // return solution
