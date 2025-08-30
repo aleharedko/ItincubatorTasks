@@ -7,18 +7,17 @@
 */
 
 function capitalizeWords(string) {
-  // let creatArray = [string]
-  // creatArray.splice
-  if(string.length === 0){
+
+  if (string.length === 0) {
     return ''
   }
 
-  let word = string.split(" ")
-  let firstWord = word[0]
-  const solution = firstWord.charAt(0).toUpperCase() + firstWord.slice(1)
-  word[0] = solution 
- // const solution = string.charAt(0).toUpperCase() //+ string.slice(1)
-  return word.join(' ')
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    
+  }
+  const solution = string.charAt(0).toUpperCase() + string.slice(1)
+  return solution
 }
 
 const array = capitalizeWords("hello world from javascript")
