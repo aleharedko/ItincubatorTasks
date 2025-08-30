@@ -18,10 +18,11 @@ function capitalizeWords(string) {
     if (element === 'h' || element === 'w' || element === 'f' || element === 'j') {
       newString = element.toUpperCase() + element.slice(1)
     }
-    return newString
+    
   }
   // const solution = string.charAt(0).toUpperCase() + string.slice(1)
   // return solution
+  return newString
 }
 
 const array = capitalizeWords("hello world from javascript")
