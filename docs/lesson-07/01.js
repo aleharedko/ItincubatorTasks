@@ -19,7 +19,7 @@ const WEB_TECH_IMAGES = [
 ]
 
 let currentIndex = 0; //создаю переменную на текущий индекс
-const sliderImg = document.getElementById('web-tech-image'); // ищу слайдер по яйди
+const sliderImg = document.getElementById('web-tech-image'); // ищу слайдер по айди
 sliderImg.src = WEB_TECH_IMAGES[currentIndex]; //устанавливаю первое изображение в слайдере
 
 const buttonNextImg = document.getElementById('next-button');  //ищу по id кнопку вперед

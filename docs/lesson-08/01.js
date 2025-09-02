@@ -16,7 +16,7 @@ function capitalizeWords(string) {
   for (let i = 0; i < string.length; i++) {
     const element = string[i];
     if (element === 'h' || element === 'w' || element === 'f' || element === 'j') {
-      newString = element.toUpperCase() +  
+      newString = element.toUpperCase()
     }
     
   }
