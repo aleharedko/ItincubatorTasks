@@ -10,19 +10,15 @@ function capitalizeWords(string) {
   if (string.length === 0) {
     return ''
   }
-
-  let newString = "";
-
-  for (let i = 0; i < string.length; i++) {
-    const element = string[i];
-    if (element === 'h' || element === 'w' || element === 'f' || element === 'j') {
-      newString = element.toUpperCase()
+  const word = string.split(' ')
+  const capitalize = word.map(word => {
+    if(word.length > 0){
+      return word.charAt(0).toUpperCase() + word.slice(1)
     }
-    
-  }
-  // const solution = string.charAt(0).toUpperCase() + string.slice(1)
-  // return solution
-  return newString
+    return ''
+  })
+
+return capitalize.join(' ')
 }
 
 const array = capitalizeWords("hello world from javascript")
