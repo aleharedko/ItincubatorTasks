@@ -4,7 +4,7 @@
  */
 
 function isNumeric(str) {
-  //return (typeof str === "string") ? true : false
+  str = str * 1
   if(typeof str === 'number'){
     return true
   } else{
