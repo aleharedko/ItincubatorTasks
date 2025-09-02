@@ -4,12 +4,11 @@
  */
 
 function isNumeric(str) {
-  str = str * 1
-  if(typeof str === 'number'){
-    return true
-  } else{
-    return false
-  }
+if (str === 'string') {
+  return false
+} else{
+  return true
+}
 }
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true
@@ -17,6 +16,6 @@ function isNumeric(str) {
 // console.log(isNumeric("123abc")) // Ожидаемый результат: false
 // console.log(isNumeric("abc")) // Ожидаемый результат: false
 // console.log(isNumeric(" ")) // Ожидаемый результат: false
-
-const exemple = isNumeric(" ")
+const exemple = isNumeric("abc")
 console.log(exemple);
+
