@@ -10,5 +10,13 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  const varibal = str.length 
+  if(varibal > maxLength){
+    return str.slice(0,maxLength) + '...'
+  }else{
+    return str
+  }
 }
+
+let solution = truncate("Вот, что мне действительно нравится в этом", 20);
+console.log(solution);

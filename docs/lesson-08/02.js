@@ -25,7 +25,7 @@
 // }
 
 function isNumeric(str) {
-  if (typeof str !== 'string' || str.trim() === '') {
+  if (typeof str !== 'string' || str.trim() === '') { //два сравнения перый если срт не строка, а второй если она пустая, если при использовании .trim нет пробельных символов то будет true
     return false;
   }
 
@@ -40,5 +40,5 @@ function isNumeric(str) {
 // console.log(isNumeric("123abc")) // Ожидаемый результат: false
 // console.log(isNumeric("abc")) // Ожидаемый результат: false
 // console.log(isNumeric(" ")) // Ожидаемый результат: false
-const exemple = isNumeric("12.3")
+const exemple = isNumeric("123a")
 console.log(exemple);
