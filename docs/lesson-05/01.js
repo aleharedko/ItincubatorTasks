@@ -23,7 +23,28 @@ const game = {
     }else {
       return console.log('Invalid resource');
     }
+dd
+  }
 
+}
+
+console.log(game.addResource('golкукцкццd', 10));
+
+
+const game = {
+  resources: {
+    gold: 250,
+    lumber: 100,
+  },
+  addResource(resource, amount) {
+    if (resource === 'gold' ) {
+      return game.resources.gold += amount
+    } else if(resource === 'lumber'){
+      return game.resources.lumber += amount
+    }else {
+      return console.log('Invalid resource');
+    }
+dd
   }
 
 }
