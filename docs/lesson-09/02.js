@@ -32,10 +32,12 @@ const countdownDisplay = document.getElementById('countdown')
 let isTimerStarted = false
 let timerId
 
-startButton.addEventListener('click', () => {
+startButton.addEventListener('click', (event) => {
   let counter = 3
-
-  // your code
+    startButton.classList.add("start-button")
+    if (event.target.contain("start-button") && event.target.id){
+        setTimeout()
+    }
 })
 
 cancelButton.addEventListener('click', () => {
