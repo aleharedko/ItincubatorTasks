@@ -31,13 +31,28 @@ const countdownDisplay = document.getElementById('countdown')
 
 let isTimerStarted = false
 let timerId
--
-startButton.addEventListener('click', (event) => {
-  let counter = 3
-    startButton.classList.add("start-button")
-    if (event.target.contain("start-button") && event.target.id){
+let counter
 
-        countdownDisplay.setTimeout()
+startButton.addEventListener('click', (event) => {
+    if(isTimerStarted){
+        return
+    }
+
+    counter = 3
+    isTimerStarted = true
+    countdownDisplay.innerHTML = counter
+
+    startButton.classList.add("start-button")
+    if (event.target.classList.contains("start-button") && event.target.id){
+        countdownDisplay.innerHTML = --counter
+        timerId = setInterval(function () {
+
+            if (counter > 0){
+                countdownDisplay.innerHTML = "🚀"
+                clearInterval(timerId)
+                isTimerStarted = false
+            }
+        },1000);
     }
 })
 
