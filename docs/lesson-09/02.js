@@ -40,14 +40,14 @@ startButton.addEventListener('click', (event) => {
 
     counter = 3
     isTimerStarted = true
-    countdownDisplay.innerHTML = counter
+    // countdownDisplay.innerHTML = counter
 
     startButton.classList.add("start-button")
     if (event.target.classList.contains("start-button") && event.target.id){
-        countdownDisplay.innerHTML = --counter
-        timerId = setInterval(function () {
 
-            if (counter > 0){
+        timerId = setInterval(function () {
+            countdownDisplay.innerHTML = counter--
+            if (counter < 0){
                 countdownDisplay.innerHTML = "🚀"
                 clearInterval(timerId)
                 isTimerStarted = false
