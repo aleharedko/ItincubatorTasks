@@ -58,7 +58,8 @@ function updateCartDisplay() {
     const petSpanElement = document.createElement('li')
     petSpanElement.classList.add('pet')
     petSpanElement.textContent = pet.title
-    cartList.append(petSpanElement)
+      petSpanElement.style.listStyle = 'none';  //для удаления кружка как у лишки
+      cartList.append(petSpanElement)
   }
 }
 
