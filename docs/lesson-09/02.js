@@ -55,7 +55,7 @@ startButton.addEventListener('click', (event) => {
         },1000);
     }
 })
-
+    //си лшнчшдю\лжюлбгене н
 cancelButton.addEventListener('click', () => {
   // your code
 })
