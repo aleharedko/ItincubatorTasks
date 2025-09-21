@@ -49,7 +49,8 @@ for (let i = 0; i < PETS.length; i++) {
 }
 
 1
-
+2312
+123
 
 // Обновляем отображение корзины
 function updateCartDisplay() {
