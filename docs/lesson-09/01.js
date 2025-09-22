@@ -48,18 +48,6 @@ for (let i = 0; i < PETS.length; i++) {
   petShop.append(petButtonElement)
 }
 
-1
-2312
-123
-
-
-
-1212
-21
-2
-12
-12
-
 // Обновляем отображение корзины
 function updateCartDisplay() {
   cartList.innerHTML = ''
