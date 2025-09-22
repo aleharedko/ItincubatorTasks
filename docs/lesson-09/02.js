@@ -40,10 +40,12 @@ startButton.addEventListener('click', (event) => {
 
     counter = 3
     isTimerStarted = true
-    // countdownDisplay.innerHTML = counter
 
     startButton.classList.add("start-button")
     if (event.target.classList.contains("start-button") && event.target.id){
+
+        countdownDisplay.innerHTML = counter //для мгновенного отображения на экране
+        counter --
 
         timerId = setInterval(function () {
             countdownDisplay.innerHTML = counter--
@@ -55,7 +57,12 @@ startButton.addEventListener('click', (event) => {
         },1000);
     }
 })
-    //си лшнчшдю\лжюлбгене н
+
 cancelButton.addEventListener('click', () => {
-  // your code
+    if(isTimerStarted){
+        clearInterval(timerId)
+        countdownDisplay.innerHTML = "Отменено"
+        isTimerStarted = false
+
+    }
 })
