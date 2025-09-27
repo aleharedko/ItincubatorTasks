@@ -84,6 +84,7 @@ petShop.addEventListener('click', function(event) {
         //ёщё раз проверить почему не работает
         1
             12
+                1123
         updateCartDisplay();
     }
 });
