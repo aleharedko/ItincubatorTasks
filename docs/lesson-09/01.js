@@ -82,6 +82,7 @@ petShop.addEventListener('click', function(event) {
             messageBox.textContent = 'Вы не можете добавить более 3 питомцев';
         }
         //ёщё раз проверить почему не работает
+        1
         updateCartDisplay();
     }
 });
