@@ -85,6 +85,7 @@ petShop.addEventListener('click', function(event) {
         1
             12
                 1123
+                    1234
         updateCartDisplay();
     }
 });
